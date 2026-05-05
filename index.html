@@ -2,31 +2,33 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  
-  <!-- 🔥 CLAVE PARA RESPONSIVE -->
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
   <title>Dato Histórico</title>
 
   <style>
-    /* 🔧 RESET GENERAL */
+    /* 🔧 RESET */
     * {
       box-sizing: border-box;
     }
 
     body {
       margin: 0;
-      padding: 15px;
+      padding: 20px;
       font-family: Arial, sans-serif;
-      overflow-x: hidden; /* 👈 elimina scroll horizontal */
+      overflow-x: hidden;
       background-color: #f5f5f5;
+
+      display: flex;
+      justify-content: center;   /* 👈 centra horizontal */
+      align-items: flex-start;   /* 👈 no lo pega al centro vertical */
+      min-height: 100vh;
     }
 
-    /* 📦 CAJA PRINCIPAL */
+    /* 📦 CAJA */
     .dato-box {
       width: 100%;
-      max-width: 100%;
-      padding: 14px;
+      max-width: 700px; /* 👈 controla ancho en desktop */
+      padding: 16px;
 
       background-color: #cccccc;
       border-left: 5px solid #2ea3f2;
@@ -53,7 +55,7 @@
       overflow-wrap: break-word;
     }
 
-    /* 📱 AJUSTE EXTRA PARA MÓVIL */
+    /* 📱 MOBILE */
     @media (max-width: 600px) {
       body {
         padding: 10px;
